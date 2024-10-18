@@ -150,6 +150,20 @@ body {
     height: 15%;
     margin-left: 30%;
     margin-top: 60%;
+    animation-delay: 2s;
+    animation: fallDown 1s linear forwards;
+    animation-timeline: view();
+}
+
+@keyframes fallDown {
+    0% {
+        height: 0%;
+        opacity: 0;
+    }
+    20% {
+        height: 15%; 
+        opacity: 1;
+    }
 }
 
 .p4 {
@@ -158,7 +172,18 @@ body {
     font-size: 50px;
     margin-left: 12%;
     margin-top: 69%;
-    padding-bottom: 20%;
+    padding-bottom: 60%;
+    animation: autoS 1s linear forwards;
+    animation-timeline: view();
+}
+
+@keyframes autoS {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
 }
 
 .icon {
